@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlexSim - Digital Factory Campus</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1 class="main-logo">FlexSim</h1>
+        </header>
+
+        <main class="main">
+            <!-- FlexSim Projekte Section -->
+            <section class="projects-section">
+                <h2 class="section-title">Unsere FlexSim Projekte</h2>
+                <div class="projects-grid">
+                    <div class="project-card" onclick="toggleProjectDetails(0)">
+                        <div class="project-number">01</div>
+                        <h3 class="project-title">AI Exit-Game</h3>
+                        <p class="project-description">Beschreibung des ersten FlexSim Projekts</p>
+                        <span class="expand-icon">▼</span>
+                    </div>
+
+                    <div class="project-card" onclick="toggleProjectDetails(1)">
+                        <div class="project-number">02</div>
+                        <h3 class="project-title">Cyber Security Schulung</h3>
+                        <p class="project-description">Beschreibung des zweiten FlexSim Projekts</p>
+                        <span class="expand-icon">▼</span>
+                    </div>
+
+                    <div class="project-card" onclick="toggleProjectDetails(2)">
+                        <div class="project-number">03</div>
+                        <h3 class="project-title">GLC?</h3>
+                        <p class="project-description">Beschreibung des dritten FlexSim Projekts</p>
+                        <span class="expand-icon">▼</span>
+                    </div>
+                </div>
+
+                <!-- Details Container für Projekte -->
+                <div class="details-container" id="projectDetailsContainer">
+                    <div class="details-panel" data-project="0">
+                        <div class="details-grid">
+                            <div class="detail-section">
+                                <p>Visualisierung des ersten Projekts</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="details-panel" data-project="1">
+                        <div class="details-grid">
+                            <div class="detail-section">
+                                <p>Visualisierung des zweiten Projekts</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="details-panel" data-project="2">
+                        <div class="details-grid">
+                            <div class="detail-section">
+                                <p>Visualisierung des dritten Projekts</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Team Section -->
+            <section class="team-section">
+                <h2 class="section-title">Unser FlexSim Team</h2>
+                <div class="team-grid">
+                    <div class="team-card" onclick="toggleTeamDetails(0)">
+                        <div class="team-avatar">
+                            <div class="avatar-placeholder">👤</div>
+                        </div>
+                        <h3 class="team-name">Torsten Hase</h3>
+                        <p class="team-role">Berufsbezeichnung</p>
+                        <span class="expand-icon">▼</span>
+                    </div>
+
+                    <div class="team-card" onclick="toggleTeamDetails(1)">
+                        <div class="team-avatar">
+                            <div class="avatar-placeholder">👤</div>
+                        </div>
+                        <h3 class="team-name">Mathias Mackowiak</h3>
+                        <p class="team-role">Berufsbezeichnung</p>
+                        <span class="expand-icon">▼</span>
+                    </div>
+
+                    <div class="team-card" onclick="toggleTeamDetails(2)">
+                        <div class="team-avatar">
+                            <div class="avatar-placeholder">👤</div>
+                        </div>
+                        <h3 class="team-name">Florian Hoehne</h3>
+                        <p class="team-role">Berufsbezeichnung</p>
+                        <span class="expand-icon">▼</span>
+                    </div>
+                </div>
+
+                <!-- Details Container für Team -->
+                <div class="details-container" id="teamDetailsContainer">
+                    <div class="details-panel" data-team="0">
+                        <div class="details-grid">
+                            <div class="detail-section">
+                                <p>Mehr Infos zu Torsten Hase</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="details-panel" data-team="1">
+                        <div class="details-grid">
+                            <div class="detail-section">
+                                <p>Mehr Infos zu Mathias Mackowiak</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="details-panel" data-team="2">
+                        <div class="details-grid">
+                            <div class="detail-section">
+                                <p>Mehr Infos zu Florian Hoehne</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- TXP Character (Optional) -->
+        <div class="txp-character-container" style="display: none;">
+            <div class="txp-speech-bubble" id="txpSpeech" style="display: none;">
+                <p id="txpSpeechText">Später werde ich Dinge zur Flexsim und zum Team sagen können</p>
+            </div>
+            <div id="txpCharacter" class="txp-character">
+                <img src="TXP/TXP_Stand_Pose/TXP Stand Pose_00000.png" alt="TXP Character" class="txp-character-img">
+            </div>
+        </div>
+
+        <footer class="footer">
+            <p>&copy; 2025 Digital Factory Campus - Bachelorarbeit Parvin Buchta</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
