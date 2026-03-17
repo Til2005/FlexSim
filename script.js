@@ -202,8 +202,17 @@ class TXPCharacter {
         this.hideTimeout = null;
 
         this.speeches = [
-            "Später werde ich Dinge zur Flexsim und zum Team sagen können"
+            "Auf dieser Seite erfährst du alles Wichtige zur FlexSim."
         ];
+
+        this.cardSpeeches = {
+            "AI Training Camp": "KI verstehen, ausprobieren, mitnehmen – drei Tage, die sich lohnen.",
+            "Cyber Security Schulung": "Interaktiv, praxisnah und am Ende weiß man, worauf man achten muss.",
+            "GLC-Produktschulung": "250 Kolleginnen und Kollegen haben den GLC so erlebt, wie er sein soll – zum Anfassen.",
+            "Torsten Hase": "Einer der Menschen hinter der FlexSim – frag ihn gerne.",
+            "Mathias Mackowiak": "Immer mit dabei, wenn es darum geht, Ideen umzusetzen.",
+            "Florian Höhne": "Teil des Teams, das die FlexSim täglich weiterentwickelt."
+        };
 
         this.init();
     }
@@ -521,11 +530,10 @@ class TXPCharacter {
                 );
 
                 if (isOnCard) {
-                    // Hole den Namen aus der Card
                     const titleElement = card.querySelector('.project-title, .team-name');
                     if (titleElement) {
-                        const cardName = titleElement.textContent;
-                        speechText = `Bald werde ich auch mehr zu ${cardName} sagen können`;
+                        const cardName = titleElement.textContent.trim();
+                        speechText = this.cardSpeeches[cardName] || `Mehr zu ${cardName} kommt bald.`;
                     }
                 }
             });

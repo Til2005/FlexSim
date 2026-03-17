@@ -60,13 +60,14 @@ body {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
+    position: relative;
 }
 
 /* ===============================
    Header / Logo
    =============================== */
 .header {
-    padding: 40px 0;
+    padding: 20px 0 40px;
     text-align: center;
     margin-bottom: 60px;
 }
@@ -748,15 +749,15 @@ body {
    TXP Character (Optional)
    =============================== */
 .txp-character-container {
-    position: fixed;
-    bottom: 20px;
+    position: absolute;
+    bottom: 80px;
     left: 50px;
     z-index: 100;
 }
 
 .txp-character {
-    width: 120px;
-    height: 120px;
+    width: 100px;
+    height: 100px;
     position: relative;
     filter: drop-shadow(0 4px 8px rgba(0, 132, 255, 0.5));
     cursor: pointer;
