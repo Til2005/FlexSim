@@ -9,32 +9,96 @@
 <body>
     <div class="container">
         <header class="header">
-            <h1 class="main-logo">FlexSim</h1>
+            <div class="main-logo">
+                <video class="logo-video" autoplay loop muted playsinline>
+                    <source src="assets/FlexSim Logo v1.1.mp4" type="video/mp4">
+                </video>
+            </div>
         </header>
 
         <main class="main">
+            <!-- Hero Banner Section -->
+            <section class="hero-banner-section">
+                <div class="hero-banner">
+                    <img src="assets/images/flexsim_overlay.png" alt="FlexSim Tisch" class="hero-bg-image">
+
+                    <div class="hero-images-container">
+                        <p class="hero-flyer-label"><span class="label-neu">NEU: </span><span class="label-name">FlexSim Flyer</span></p>
+                        <div class="hero-flyers-row">
+                            <div class="hero-small-image" onclick="openLightbox('assets/images/FlexSim_Flyer_Vorderseite.png', 'FlexSim Flyer Vorderseite')">
+                                <img src="assets/images/FlexSim_Flyer_Vorderseite.png" alt="FlexSim Flyer Vorderseite" class="hero-flyer-img">
+                            </div>
+                            <div class="hero-small-image" onclick="openLightbox('assets/images/FlexSim_Flyer_Rueckseite.png', 'FlexSim Flyer Rückseite')">
+                                <img src="assets/images/FlexSim_Flyer_Rueckseite.png" alt="FlexSim Flyer Rückseite" class="hero-flyer-img">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="hero-bottom-text">
+                        <p class="hero-description hero-tagline">
+                            <span class="tagline-blue">INTERAKTIV</span>
+                            <span class="tagline-yellow">ERLEBBAR</span>
+                            <span class="tagline-white">DIGITAL</span>
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Hero Intro Text -->
+            <div class="hero-intro-text-block">
+                <h2 class="hero-intro-heading">Entdecke die FlexSim des Digital Factory Campus</h2>
+                <p class="hero-intro-body">
+                    Die FlexSim ist ein interaktiver Multitouch-Tisch, der von vier Seiten gleichzeitig bedient werden kann.
+                    Der Tisch ist an mehreren Mercedes-Benz-Standorten im Einsatz und wird für Schulungen in Produktion,
+                    Planung und IT genutzt. Teams erleben Produktionsprozesse, Sicherheitsthemen und Produktwissen
+                    nicht als Vortrag, sondern als gemeinsames, interaktives Erlebnis.
+                </p>
+            </div>
+
+            <!-- Stats Section -->
+            <section class="stats-section">
+                <div class="stats-grid">
+                    <div class="stat-item">
+                        <div class="stat-number">250<span class="stat-plus">+</span></div>
+                        <div class="stat-label">Mitarbeitende geschult</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">4</div>
+                        <div class="stat-label">Standorte weltweit</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">40</div>
+                        <div class="stat-label">Simultane Touchpoints</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">4K</div>
+                        <div class="stat-label">Ultra-HD Auflösung</div>
+                    </div>
+                </div>
+            </section>
+
             <!-- FlexSim Projekte Section -->
             <section class="projects-section">
                 <h2 class="section-title">Unsere FlexSim Projekte</h2>
                 <div class="projects-grid">
                     <div class="project-card" onclick="toggleProjectDetails(0)">
                         <div class="project-number">01</div>
-                        <h3 class="project-title">AI Exit-Game</h3>
-                        <p class="project-description">Beschreibung des ersten FlexSim Projekts</p>
+                        <h3 class="project-title">AI Training Camp</h3>
+                        <p class="project-description">40 Teilnehmende erleben KI-Tools und lösen gemeinsam ein AI-Escape-Room-Spiel auf der FlexSim.</p>
                         <span class="expand-icon">▼</span>
                     </div>
 
                     <div class="project-card" onclick="toggleProjectDetails(1)">
                         <div class="project-number">02</div>
                         <h3 class="project-title">Cyber Security Schulung</h3>
-                        <p class="project-description">Beschreibung des zweiten FlexSim Projekts</p>
+                        <p class="project-description">35 Planende des Werks Berlin erkunden interaktiv Cyber-Bedrohungen und knacken gemeinsam einen Code.</p>
                         <span class="expand-icon">▼</span>
                     </div>
 
                     <div class="project-card" onclick="toggleProjectDetails(2)">
                         <div class="project-number">03</div>
-                        <h3 class="project-title">GLC?</h3>
-                        <p class="project-description">Beschreibung des dritten FlexSim Projekts</p>
+                        <h3 class="project-title">GLC-Produktschulung</h3>
+                        <p class="project-description">Über 250 Mitarbeitende in Bremen erleben den elektrischen GLC durch interaktive 3D-Exploration.</p>
                         <span class="expand-icon">▼</span>
                     </div>
                 </div>
@@ -44,7 +108,19 @@
                     <div class="details-panel" data-project="0">
                         <div class="details-grid">
                             <div class="detail-section">
-                                <p>Visualisierung des ersten Projekts</p>
+                                <h4>Was ist das AI Training Camp?</h4>
+                                <p>Jeder hat schon mal von künstlicher Intelligenz gehört – aber was steckt wirklich dahinter, welche Tools gibt es bei Mercedes-Benz und wie lässt sich KI effizient in den Arbeitsalltag integrieren? Genau das erforschten 40 Teilnehmende in drei erlebnisreichen Tagen am DFC Berlin.</p>
+                                <p>In verschiedenen Sessions beleuchteten KI-Experten Tools wie <strong>Power Automate</strong> und <strong>Mendix</strong>, die bei Mercedes-Benz eingesetzt werden können, um Alltagsaufgaben zu erleichtern und Prozesse effektiver zu gestalten.</p>
+                            </div>
+                            <div class="detail-section">
+                                <h4>FlexSim im Camp: Das AI-Escape-Room-Spiel</h4>
+                                <p>Das absolute Highlight: ein AI-Escape-Room-Spiel auf der FlexSim, das direkt im DFC konzipiert und entwickelt wurde. Im Team mussten die Teilnehmenden knifflige Aufgaben lösen – eine fesselnde Erfahrung, die die Potenziale von KI auf interaktive Weise näherbrachte.</p>
+                                <ul>
+                                    <li>40 Teilnehmende im Pilotcamp</li>
+                                    <li>3 Tage am Digital Factory Campus Berlin</li>
+                                    <li>Bis Ende 2026: 39 weitere Camps geplant</li>
+                                    <li>Anmeldung über die Digital Challenge im Intranet</li>
+                                </ul>
                             </div>
                         </div>
                     </div>
@@ -52,7 +128,19 @@
                     <div class="details-panel" data-project="1">
                         <div class="details-grid">
                             <div class="detail-section">
-                                <p>Visualisierung des zweiten Projekts</p>
+                                <h4>Cyber Security – Mai 2025, Werk Berlin</h4>
+                                <p>Rund 35 Planerinnen und Planer des Werks Berlin tauchten in die Welt der Cyber-Sicherheit ein. Die Session wurde von <strong>Doris Winckel</strong> (DFC Berlin) und Cyber-Security-Architekt <strong>Joachim Beuttler</strong> (Sindelfingen) entwickelt und behandelte reale Bedrohungsszenarien aus dem Alltag.</p>
+                                <ul>
+                                    <li>Einfallstore: Smart Home, Hotspots, USB-Sticks, Spionage-Ladekabel</li>
+                                    <li>Interaktive Challenges zu jedem Themenblock</li>
+                                    <li>Finale: Team-Challenge – einen Code aus Fragen knacken</li>
+                                    <li>Mentimeter-Abfrage: durchweg positives Feedback</li>
+                                </ul>
+                            </div>
+                            <div class="detail-section">
+                                <h4>Ergebnis & Wirkung</h4>
+                                <p>Die Infosession war Auftakt für ein verpflichtendes digitales Folgetraining für alle MO/VAN-Planenden. Die FlexSim machte abstrakte Sicherheitsthemen greifbar – und zeigte, dass erlebnisorientiertes Lernen auch für sicherheitskritische Inhalte funktioniert.</p>
+                                <p><strong>Gruppen:</strong> 5–7 Personen &nbsp;|&nbsp; <strong>Standort:</strong> Werk Berlin</p>
                             </div>
                         </div>
                     </div>
@@ -60,7 +148,19 @@
                     <div class="details-panel" data-project="2">
                         <div class="details-grid">
                             <div class="detail-section">
-                                <p>Visualisierung des dritten Projekts</p>
+                                <h4>GLC-Produktschulung – Juli bis September 2025, Bremen</h4>
+                                <p>In Kooperation mit dem DFC Berlin entwickelte das Trainingscenter Bremen eine interaktive Produktschulung für den elektrischen GLC. Statt Präsentation erlebten die Teilnehmenden das Fahrzeug in einer <strong>interaktiven 3D-Exploration</strong>: Fahrzeug drehen, zoomen, Bauteile hervorheben, Design-Highlights entdecken.</p>
+                                <ul>
+                                    <li>Über <strong>250 Mitarbeitende</strong> aus Presswerk, Lackierung, Endmontage, HR und Kundencenter</li>
+                                    <li>Hotspots für Innen- und Außenbereiche des GLC</li>
+                                    <li>Design-Highlights: Lichttechnik, Lackierungen, Felgen</li>
+                                    <li>Auch eingesetzt beim Meisterforum und bei Townhalls</li>
+                                </ul>
+                            </div>
+                            <div class="detail-section">
+                                <h4>Feedback & Reichweite</h4>
+                                <p>Die Schulung fand in Kleingruppen von maximal <strong>6 Personen</strong> statt – bewusst gewählt, um kollaboratives Erleben zu fördern. Das Feedback der Teilnehmenden war durchweg positiv. Der Einsatz bei Meisterforum und Townhalls zeigte, dass die FlexSim auch als Eventformat überzeugt.</p>
+                                <p><strong>Laufzeit:</strong> 01.07. – 12.09.2025 &nbsp;|&nbsp; <strong>Standort:</strong> Trainingscenter Bremen</p>
                             </div>
                         </div>
                     </div>
@@ -73,7 +173,7 @@
                 <div class="team-grid">
                     <div class="team-card" onclick="toggleTeamDetails(0)">
                         <div class="team-avatar">
-                            <div class="avatar-placeholder">👤</div>
+                            <img src="assets/images/TorstenHase.jpg" alt="Torsten Hase" class="avatar-photo">
                         </div>
                         <h3 class="team-name">Torsten Hase</h3>
                         <p class="team-role">Berufsbezeichnung</p>
@@ -82,7 +182,7 @@
 
                     <div class="team-card" onclick="toggleTeamDetails(1)">
                         <div class="team-avatar">
-                            <div class="avatar-placeholder">👤</div>
+                            <img src="assets/images/MathiasMackowiak.jpg" alt="Mathias Mackowiak" class="avatar-photo">
                         </div>
                         <h3 class="team-name">Mathias Mackowiak</h3>
                         <p class="team-role">Berufsbezeichnung</p>
@@ -91,9 +191,9 @@
 
                     <div class="team-card" onclick="toggleTeamDetails(2)">
                         <div class="team-avatar">
-                            <div class="avatar-placeholder">👤</div>
+                            <img src="assets/images/FlorianHoehne.jpg" alt="Florian Höhne" class="avatar-photo">
                         </div>
-                        <h3 class="team-name">Florian Hoehne</h3>
+                        <h3 class="team-name">Florian Höhne</h3>
                         <p class="team-role">Berufsbezeichnung</p>
                         <span class="expand-icon">▼</span>
                     </div>
@@ -129,7 +229,7 @@
         </main>
 
         <!-- TXP Character (Optional) -->
-        <div class="txp-character-container" style="display: none;">
+        <div class="txp-character-container">
             <div class="txp-speech-bubble" id="txpSpeech" style="display: none;">
                 <p id="txpSpeechText">Später werde ich Dinge zur Flexsim und zum Team sagen können</p>
             </div>
@@ -138,8 +238,16 @@
             </div>
         </div>
 
+        <!-- Lightbox -->
+        <div class="lightbox" id="lightbox" onclick="closeLightbox()">
+            <div class="lightbox-content" onclick="event.stopPropagation()">
+                <button class="lightbox-close" onclick="closeLightbox()">&times;</button>
+                <img src="" alt="" id="lightboxImg" class="lightbox-img">
+            </div>
+        </div>
+
         <footer class="footer">
-            <p>&copy; 2025 Digital Factory Campus - Bachelorarbeit Parvin Buchta</p>
+            <p>&copy; 2025 – 2026 Digital Factory Campus | Bachelorarbeit Parvin Buchta</p>
         </footer>
     </div>
 

@@ -94,7 +94,7 @@ function triggerLogoAnimation() {
 
 function createParticleEffect() {
     const container = document.body;
-    const colors = ['#00A8E8', '#0066CC', '#FFD700'];
+    const colors = ['#0084FF', '#FF00FF', '#FFC000'];
 
     for (let i = 0; i < 30; i++) {
         setTimeout(() => {
@@ -609,3 +609,24 @@ document.addEventListener('keydown', function(event) {
 });
 
 console.log('FlexSim Team Website loaded successfully!');
+
+// ===============================
+//   Lightbox
+// ===============================
+function openLightbox(src, alt) {
+    const lightbox = document.getElementById('lightbox');
+    const img = document.getElementById('lightboxImg');
+    img.src = src;
+    img.alt = alt;
+    lightbox.classList.add('active');
+    document.body.style.overflow = 'hidden';
+}
+
+function closeLightbox() {
+    document.getElementById('lightbox').classList.remove('active');
+    document.body.style.overflow = '';
+}
+
+document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape') closeLightbox();
+});
